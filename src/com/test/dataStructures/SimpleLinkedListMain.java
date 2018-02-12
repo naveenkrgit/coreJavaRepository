@@ -16,6 +16,10 @@ public class SimpleLinkedListMain {
 		list.addToFront(marySmith);
 		list.addToFront(mikeWilson);
 		
+		System.out.println("get size::" + list.getSize());
+		
+		list.printLinkedList();
+		
 		
 	}
 

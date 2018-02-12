@@ -25,6 +25,8 @@ public class EmployeeNode {
 		this.next = next;
 	}
 	
-	
+	public String toString(){
+		return employee.toString();
+	}
 
 }

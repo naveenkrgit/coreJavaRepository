@@ -4,9 +4,9 @@ public class BinarySearchTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] intArr = { -22, -15, 1, 7, 20, 35, 55 };
+		int[] intArr = {-22,-15,1,7,12,20,27,35,37,40,42,47,55};
 		//System.out.println(iterativeBinarySearch(intArr,-15));
-		System.out.println(iterativeBinarySearch(intArr,1));
+		System.out.println(iterativeBinarySearch(intArr,-15));
 	}
 
 	public static int iterativeBinarySearch(int[] input, int value) {
@@ -19,6 +19,7 @@ public class BinarySearchTest {
 		while (start < end) {
 			int midpoint = (start + end) / 2;
 			System.out.println("Midpoint = ::" + midpoint);
+			System.out.println("Midpoint Value= ::" + input[midpoint]);
 			if (input[midpoint] == value) {
 				//System.out.println("Value is at position::" + input[midpoint]);
 				return midpoint;
